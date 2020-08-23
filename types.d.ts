@@ -1,3 +1,6 @@
-import * as Interal from "./internal";
-
-declare module "pkg_name" {}
+declare module "pkg_name" {
+    export default function normalizeIndentation(
+        str: string,
+        indentation?: string
+    ): string;
+}
